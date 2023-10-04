@@ -54,7 +54,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Weather App'),
+        title: Text('Weather Application'),
       ),
       body: Center(
         child: weatherData.isEmpty
