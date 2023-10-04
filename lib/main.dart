@@ -22,9 +22,8 @@ class WeatherScreen extends StatefulWidget {
 }
 
 class _WeatherScreenState extends State<WeatherScreen> {
-  String apiKey =
-      '696f7d5f01253999ec97f2696afa5a8d'; // Replace with your actual API key
-  String cityName = 'Helsinki'; // Replace with the desired city
+  String apiKey = '696f7d5f01253999ec97f2696afa5a8d';
+  String cityName = 'Helsinki';
   Map<String, dynamic> weatherData = {};
 
   double kelvinToCelsius(double kelvin) {
@@ -59,7 +58,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
       ),
       body: Center(
         child: weatherData.isEmpty
-            ? CircularProgressIndicator() // Show loading indicator while fetching data
+            ? CircularProgressIndicator()
             : Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
